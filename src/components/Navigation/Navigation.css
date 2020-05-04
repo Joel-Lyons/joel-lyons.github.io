@@ -1,1 +1,12 @@
-/* CSS for Navigation component */
+#nav-hamburger {
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
