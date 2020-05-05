@@ -1,0 +1,28 @@
+footer {
+    position: fixed;
+    width: 40%;
+    height: 75px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+a {
+    color: black;
+    padding: 15px 5px;
+}
+
+li {
+    list-style: none;
+}

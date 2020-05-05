@@ -8,11 +8,11 @@ class Navigation extends React.Component {
             <div>
                 <nav>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/skills">Skills</Link></li>
-                        <li><Link to="/projects">Projects</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/"><img src="/home-link.png" /></Link></li>
+                        <li><Link to="/about"><img src="/about-link.png" /></Link></li>
+                        <li><Link to="/skills"><img src="/skills-link.png" /></Link></li>
+                        <li><Link to="/projects"><img src="/projects-link.png" /></Link></li>
+                        <li><Link to="/contact"><img src="/contact-link.png" /></Link></li>
                     </ul>
                 </nav>
             </div>

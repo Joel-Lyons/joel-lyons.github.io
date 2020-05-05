@@ -1,1 +1,83 @@
 /* CSS for Home component */
+.home-wrapper {
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.home-wrapper img {
+    margin-right: auto;
+    padding-left: 50px;
+}
+
+.intro-text {
+    margin-left: auto;
+    padding-right: 50px;
+}
+
+.intro-text h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 550px;
+}
+
+.intro-text code.intro-title {
+    margin: 0;
+    padding: 0;
+    font-size: .9rem;
+    font-weight: 150;
+    color: green;
+}
+
+.intro-text button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .intro-text button span {
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .intro-text button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .intro-text button:hover span {
+    padding-right: 25px;
+    color: green;
+  }
+  
+  .intro-text button:hover span:after {
+    color: green;
+    opacity: 1;
+    right: 0;
+  }
+
+  .intro-text button:hover {
+      border: 1px solid green;
+  }
