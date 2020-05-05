@@ -39,6 +39,11 @@ nav a:hover::after {
     background: blue;
 }
 
+nav img {
+    width: 90px;
+    height: 45px;
+}
+
 /* nav {
     display: block;
     margin: 0 auto;
