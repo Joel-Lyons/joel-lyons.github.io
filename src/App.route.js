@@ -8,8 +8,10 @@ class AppRoute extends Component {
         return (
             <Route path="/" component={Home}>
                 <Route exact path="/" component={Home} />
-                <Route path="/projects" render = {()=> (<p> this is projects </p>)} />
-                <Route path="/contact" render = {()=> (<p> this is contact </p>)} />
+                <Route path="/about" component={Home} />
+                <Route path="/skills" component={Home} />
+                <Route path="/projects" component={Home} />
+                <Route path="/contact" component={Home} />
             </Route>
         );
     }

@@ -3,17 +3,14 @@ import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 class Navigation extends React.Component {
-    state = {
-        isOpen: false
-    }
-
     render() {
         return (
             <div>
-                <img src="menu_hamburger.png" alt="hamburger navigation icon" id="nav-hamburger" onClick={() => this.setState({isOpen: !this.state.isOpen})} />
-                <nav className={this.state.isOpen ? "show" : "hidden"}>
+                <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/skills">Skills</Link></li>
                         <li><Link to="/projects">Projects</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
