@@ -1,0 +1,16 @@
+#experience-wrapper {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+#experience-wrapper .vertical-timeline::before {
+    background: #252525;
+}
+
+#experience-wrapper .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #252525, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
+}
+
+#experience-wrapper .vertical-timeline-element-content {
+    box-shadow: 0 3px 3px #252525;
+}
