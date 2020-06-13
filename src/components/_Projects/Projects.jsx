@@ -1,13 +1,13 @@
 import React from 'react';
 import './Projects.css';
-import Navigation from '../Navigation/Navigation';
+import BSNavigation from '../Navigation/BSNavigation';
 import Footer from '../Footer/Footer';
 
 class Projects extends React.Component {
     render() {
         return (
             <div id="app">
-                <Navigation />
+                <BSNavigation />
                 <div id="projects-wrapper">
                     <div className="project-thumbnail">
                         <img src="/workinprogress.png" alt="portfolio website screenshot" />

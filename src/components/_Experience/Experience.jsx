@@ -1,17 +1,17 @@
 import React from 'react';
 import './Experience.css';
-import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import BSNavigation from '../Navigation/BSNavigation';
 
 class Experience extends React.Component {
     render() {
         return (
             <div className="app">
-                <Navigation />
+                <BSNavigation />
                 <div id="experience-wrapper">
                     <VerticalTimeline>
                         <VerticalTimelineElement

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import Navigation from '../Navigation/Navigation';
+import BSNavigation from '../Navigation/BSNavigation';
 import Footer from '../Footer/Footer';
 import {Form, Button} from 'react-bootstrap';
 
@@ -20,7 +20,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="app">
-                <Navigation />
+                <BSNavigation />
                 <div id="contact-wrapper">
                     <Form className="contact">
                         <h1>Contact</h1>
