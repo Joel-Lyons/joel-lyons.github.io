@@ -5,6 +5,18 @@ import Footer from '../Footer/Footer';
 import {Form, Button} from 'react-bootstrap';
 
 class Contact extends React.Component {
+    handleFormChange = (e) => {
+        const {name, value} = e.target;
+        this.setState({
+            [name]: value,
+        });
+    }
+
+    sendMail = (e) => {
+        e.preventDefault();
+        window.open("mailto:joel.lyons@outlook.com?cc=" + this.state.email + "&subject=" + this.state.subject + "&body=" + this.state.message);
+    }
+
     render() {
         return (
             <div className="app">
@@ -12,20 +24,17 @@ class Contact extends React.Component {
                 <div id="contact-wrapper">
                     <Form className="contact">
                         <h1>Contact</h1>
-
-                        <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" placeholder="Joel Lyons" />
-
-                        <Form.Label>Email Address</Form.Label>
-                        <Form.Control type="email" placeholder="email@example.com" />
+                        <hr/>
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control onChange={this.handleFormChange} name="email" type="email" placeholder="email@example.com" />
 
                         <Form.Label>Subject</Form.Label>
-                        <Form.Control type="text" placeholder="RE: something?" />
+                        <Form.Control onChange={this.handleFormChange} name="subject" type="text" placeholder="RE: something" />
 
                         <Form.Label>Message</Form.Label>
-                        <Form.Control as="textarea" rows="3" />
+                        <Form.Control onChange={this.handleFormChange} as="textarea" rows="3" name="message" />
 
-                        <Button type="submit" placeholder="Type your message here..." className="float-right">
+                        <Button onClick={this.sendMail} type="submit" className="float-right">
                             Send
                         </Button>
                     </Form>
