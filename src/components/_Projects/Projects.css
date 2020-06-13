@@ -40,6 +40,10 @@
     margin-top: 60px;
 }
 
+.project-text-overlay p {
+    margin-top: 20px;
+}
+
 .project-thumbnail:hover .project-text-overlay {
     opacity: 1;
 }
