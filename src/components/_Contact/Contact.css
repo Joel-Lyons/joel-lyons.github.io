@@ -1,0 +1,47 @@
+#contact-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.contact {
+    position: relative;
+    width: 650px;
+    height: 375px;
+    margin: 39px;
+    padding: 15px;
+    background-color: lightgray;
+    box-shadow: 0 3px 7px #252525;
+}   
+
+.contact textarea {
+    resize: none;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact div {
+    padding: 5px;
+}
+
+.contact .submit button {
+    float: right;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 75px;
+    height: 25px;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    background-color: white; 
+}
+
+.contact .submit button:hover { 
+    color: white;
+    background-color: green;
+    border: 1px solid white; 
+}
