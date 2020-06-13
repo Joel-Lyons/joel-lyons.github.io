@@ -15,3 +15,28 @@ footer ul li a {
     color: black;
     padding: 25px 10px;
 }
+
+footer ul li a:hover {
+    color: black;
+}
+
+footer ul li a .fa-linkedin:hover {
+    color: #0e76a8 ;
+}
+
+footer ul li a .fa-github:hover {
+    color: #767676;
+}
+
+footer ul li a .fa-instagram:hover {
+    color: #C13584;
+}
+
+footer ul li a .fa-twitter:hover {
+    color: #00acee ;
+}
+
+footer ul li a .fa-facebook-square:hover {
+    color: #3b5998 ;
+}
+

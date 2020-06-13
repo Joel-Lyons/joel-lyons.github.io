@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 const LINKS = [
-    {isBrand: true, to: "/", text: "Joel Lyons"},
-    {isBrand: false, to: "/experience", text: "Experience"},
-    {isBrand: false, to: "/projects", text: "Projects"},
-    {isBrand: false, to: "/contact", text: "Contact"}
+    {id: 1, isBrand: true, to: "/", text: "Joel Lyons"},
+    {id: 2, isBrand: false, to: "/experience", text: "Experience"},
+    {id: 3, isBrand: false, to: "/projects", text: "Projects"},
+    {id: 4, isBrand: false, to: "/contact", text: "Contact"}
 ]
 
 class NavLink extends React.Component {
@@ -22,7 +22,7 @@ class NavList extends React.Component {
         const rows = [];
         this.props.links.forEach((link) => {
             rows.push(
-                <NavLink isBrand={link.isBrand} to={link.to} text={link.text} />
+                <NavLink key={link.id} isBrand={link.isBrand} to={link.to} text={link.text} />
             );
         });
 

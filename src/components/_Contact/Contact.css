@@ -1,0 +1,33 @@
+#contact-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.contact {
+    position: relative;
+    width: 650px;
+    margin: 39px;
+    padding: 15px;
+    background-color: lightgray;
+    box-shadow: 0 3px 7px #252525;
+}   
+
+.contact textarea {
+    resize: none;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact button {
+    margin-top: 15px;
+}
+
+.contact > * {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
