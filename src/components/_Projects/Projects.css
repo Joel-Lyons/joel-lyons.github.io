@@ -68,3 +68,24 @@
 .hidden {
     display: none;
 }
+
+.card {
+    padding: 25px;
+    margin: 25px;
+    background-color: lightgray !important;
+    box-shadow: 0 3px 7px #252525;
+}
+
+.card-text ul {
+    padding-left: 40px;
+    margin-bottom: 16px;
+    list-style-type: disc;
+}
+
+.github-buttons {
+    width: 100%;
+}
+
+.github-buttons a {
+    color: white;
+}

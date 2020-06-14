@@ -1,7 +1,8 @@
 import React from 'react';
-import './Projects.css';
 import BSNavigation from '../Navigation/BSNavigation';
 import Footer from '../Footer/Footer';
+import { Card, Button } from 'react-bootstrap';
+import './Projects.css';
 
 class Projects extends React.Component {
     render() {
@@ -9,15 +10,17 @@ class Projects extends React.Component {
             <div id="app">
                 <BSNavigation />
                 <div id="projects-wrapper">
-                    <div className="project-thumbnail">
-                        <img src="/workinprogress.png" alt="portfolio website screenshot" />
-                    </div>
+                    <Card style={{width: '40rem' }}>
+                        <Card.Body>
+                            <Card.Img src="/workinprogress.png" alt="work in progress image" />
+                        </Card.Body>
+                    </Card>
 
-                    <div className="project-thumbnail">
-                        <h1>Portfolio Website</h1>
-                        <img src="/portfoliosite.jpg" alt="portfolio website screenshot" />
-                        <div className="project-text-overlay">
-                            <section>
+                    <Card style={{width: '40rem' }}>
+                        <Card.Img variant="top" src="/portfoliosite.jpg" alt="portfolio website screenshot" />
+                        <Card.Body>
+                            <Card.Title>Portfolio Website</Card.Title>
+                            <Card.Text>
                                 <p>A website I created to learn about React.js and provide additional information about my projects.</p>
                                 <ul>
                                     <li>Designed a simple and modern user interface.</li>
@@ -25,41 +28,44 @@ class Projects extends React.Component {
                                     <li>Deployed using ‘GitHub Pages’</li>
                                 </ul>
                                 <p><strong>Utilized:</strong> React.js, JavaScript, JSX, npm, React-Router, Git version control, and VSCode/Chrome Developer Tools for debugging.</p>
-                            </section>
-                        </div>
-                    </div>
+                            </Card.Text>
+                            <Button variant="secondary" className="github-buttons mt-3"><a href="https://github.com/Joel-Lyons/Joel-Lyons.github.io">Github Repo</a></Button>
+                        </Card.Body>
+                    </Card>
 
-                    <div className="project-thumbnail">
-                        <h1>Pizza Emporium</h1>
-                        <img src="/pizzaemporium.jpg" alt="pizza emporium website screenshot" />
-                        <div className="project-text-overlay">
-                            <section>
-                                <p>This is filler text until I write a proper description of the project.</p>
+                    <Card style={{width: '40rem' }}>
+                        <Card.Img variant="top" src="/pizzaemporium.jpg" alt="pizza emporium website screenshot" />
+                        <Card.Body>
+                            <Card.Title>Pizza Emporium</Card.Title>
+                            <Card.Text>
+                                <p>Pizza restaurant website created for a school assignment using C#.NET Core v2.2, Entity framework, and the Identity API for user authentication.</p>
                                 <ul>
-                                    <li>Donec porta semper nibh.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta semper nibh.</li>
-                                    <li>Donec porta semper nibh. Donec porta semper nibh.</li>
+                                    <li>Gained experience using the MVC design pattern.</li>
+                                    <li>Used the Identity API for user authentication. Custom IdentityUser class, login page, register page, and profile page.</li>
+                                    <li>Learned basic Entity framework concepts like "code first" migrations (creating data model classes), updating the database, and querying data.</li>
                                 </ul>
-                                <p><strong>Utilized:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta semper nibh. Donec porta semper nibh. Donec porta semper nibh.</p>
-                            </section>
-                        </div>
-                    </div>
+                                <p><strong>Utilized:</strong> C#, .NET Core v2.2, JavaScript/jQuery, Bootstrap, Git version control, and Visual Studio 2017.</p>
+                            </Card.Text>
+                            <Button variant="secondary" className="github-buttons mt-3"><a href="https://github.com/Joel-Lyons/pizza-emporium-v2">Github Repo</a></Button>
+                        </Card.Body>
+                    </Card>
 
-                    <div className="project-thumbnail">
-                        <h1>Budget App</h1>
-                        <img src="/budgetapp.jpg" alt="pizza emporium website screenshot" />
-                        <div className="project-text-overlay">
-                            <section>
-                                <p>This is filler text until I write a proper description of the project.</p>
+                    <Card style={{width: '40rem' }}>
+                        <Card.Img variant="top" src="/budgetapp.jpg" alt="budget app screenshot" />
+                        <Card.Body>
+                            <Card.Title>Budget App</Card.Title>
+                            <Card.Text>
+                                <p>Budget application created on a LAMP stack for my web server scripting class at Southeast Community College.</p>
                                 <ul>
-                                    <li>Donec porta semper nibh.</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta semper nibh.</li>
-                                    <li>Donec porta semper nibh. Donec porta semper nibh.</li>
+                                    <li>Learned about PHP and general web server scripting.</li>
+                                    <li>Developed the database ensuring the budget data is normalized to improve data integrity.</li>
+                                    <li>Gained experience using the MVC design pattern.</li>
                                 </ul>
-                                <p><strong>Utilized:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta semper nibh. Donec porta semper nibh. Donec porta semper nibh.</p>
-                            </section>
-                        </div>
-                    </div>
+                                <p><strong>Utilized:</strong> Full Stack Web Development on a LAMP stack, JavaScript/jQuery/Bootstrap front-end, MySQL, Git version control, and VSCode/Chrome Developer Tools/XDebug for debugging.</p>
+                            </Card.Text>
+                            <Button variant="secondary" className="github-buttons mt-3"><a href="https://github.com/Joel-Lyons/budget-maker">Github Repo</a></Button>
+                        </Card.Body>
+                    </Card>
                 </div>
                 <Footer />
             </div>
