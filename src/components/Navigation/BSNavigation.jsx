@@ -1,5 +1,6 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './BSNavigation.css';
 
 class BSNavigation extends React.Component {
@@ -13,9 +14,9 @@ class BSNavigation extends React.Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto customNav">
-                            <Nav.Link href="/experience">Experience</Nav.Link>
-                            <Nav.Link href="/projects">Projects</Nav.Link>
-                            <Nav.Link href="/contact">Contact</Nav.Link>
+                            <Link to="/experience" className="nav-link">Experience</Link>
+                            <Link to="/projects" className="nav-link">Projects</Link>
+                            <Link to="/contact" className="nav-link">Contact</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
